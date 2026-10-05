@@ -1,0 +1,81 @@
+{
+  "systemId": "cpn-b",
+  "registry": "registry.json",
+  "brandSlug": "cpn",
+  "themeKey": "cpn",
+  "supportEmail": "support@cpn.org",
+  "typography": {
+    "heading": "Source Serif 4",
+    "body": "Public Sans",
+    "scale": "17px × 1.3",
+    "radius": "12px",
+    "shadow": "0 1px 4px rgba(30,24,38,0.14)"
+  },
+  "light": {
+    "bg": "#FCFAF7",
+    "bgElevated": "#FFFFFF",
+    "fg": "#221D28",
+    "fgMuted": "#57505F",
+    "accent": "#6D4CA3",
+    "accentContrast": "#FFFFFF",
+    "accentSoft": "#EDE6F7",
+    "line": "#DFD9D2",
+    "success": "#256C3A",
+    "warning": "#8A5A00",
+    "danger": "#B3261E"
+  },
+  "dark": {
+    "bg": "#14111A",
+    "bgElevated": "#1E1927",
+    "fg": "#F1EDF6",
+    "fgMuted": "#B3ABC0",
+    "accent": "#B197E0",
+    "accentContrast": "#1D1030",
+    "accentSoft": "#2C2140",
+    "line": "#362E44",
+    "success": "#6BCB93",
+    "warning": "#E3B341",
+    "danger": "#F0736B"
+  },
+  "contrastRatios": {
+    "light": {
+      "fgOnBg": 15.8,
+      "fgOnBgElevated": 16.5,
+      "fgMutedOnBg": 7.4,
+      "accentContrastOnAccent": 6.5,
+      "accentOnBg": 6.3
+    },
+    "dark": {
+      "fgOnBg": 16.2,
+      "fgOnBgElevated": 14.9,
+      "fgMutedOnBg": 8.4,
+      "accentContrastOnAccent": 7.2,
+      "accentOnBg": 7.4
+    }
+  },
+  "email": {
+    "headerNotes": "Mark (PNG export of cpn-mark.svg) + wordmark on bg — maximum legibility on low-end mail clients; no heavy color blocks.",
+    "footerNotes": "Legal footer: Career Pathways Network, 501(c)(3) + mailing address placeholder + unsubscribe line.",
+    "buttonHex": "#6D4CA3"
+  },
+  "motion": {
+    "personality": "Steady — calm and unhurried; nothing startles",
+    "duration": {
+      "fast": "170ms",
+      "base": "280ms",
+      "slow": "420ms"
+    },
+    "easing": {
+      "standard": "cubic-bezier(0.45,0.05,0.25,1)",
+      "enter": "cubic-bezier(0.25,0,0.2,1)",
+      "exit": "cubic-bezier(0.5,0,0.8,1)"
+    },
+    "enterDistance": "10px",
+    "pressScale": 0.985,
+    "rules": "fast → hover, press, toggles · base → menus, toasts, accordions · slow → modals, view changes; exits run at fast with the exit curve; prefers-reduced-motion collapses all motion"
+  },
+  "logoKit": {
+    "mark": "assets/logo/cpn-mark.svg",
+    "guidance": "New mark proposed this round (ascending pathway + summit) — no prior logo existed. Color only via tokens."
+  }
+}

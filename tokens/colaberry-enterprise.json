@@ -1,0 +1,77 @@
+{
+  "systemId": "colaberry-enterprise",
+  "id": "colaberry-enterprise",
+  "brandId": "colaberry-enterprise",
+  "variant": null,
+  "name": "Colaberry Enterprise",
+  "blurb": "Enterprise learning and capability programs.",
+  "logo": "assets/logo/colaberry-horizontal.png",
+  "mark": "assets/cb-enterprise-mark.svg",
+  "logoDark": "assets/logo/colaberry-horizontal-white.png",
+  "fonts": {
+    "heading": "Roboto",
+    "body": "Roboto",
+    "license": "Apache-2.0 (Google Fonts)"
+  },
+  "typeScale": {
+    "base": 16,
+    "ratio": 1.25
+  },
+  "radius": 8,
+  "shadow": "0 3px 8px rgba(26,26,26,0.06), 0 1px 3px rgba(26,26,26,0.04)",
+  "motion": {
+    "personality": "Composed — measured, quiet fades; nothing bounces",
+    "duration": {
+      "fast": "120ms",
+      "base": "200ms",
+      "slow": "300ms"
+    },
+    "easing": {
+      "standard": "cubic-bezier(0.4,0,0.2,1)",
+      "enter": "cubic-bezier(0,0,0.2,1)",
+      "exit": "cubic-bezier(0.4,0,1,1)"
+    },
+    "enterDistance": "8px",
+    "pressScale": 0.985,
+    "rules": "fast → hover, press, toggles · base → menus, toasts, accordions · slow → modals, view changes; exits run at fast with the exit curve; prefers-reduced-motion collapses all motion"
+  },
+  "modes": {
+    "light": {
+      "bg": "#F8F8F7",
+      "bgElevated": "#FFFFFF",
+      "fg": "#1A1A1A",
+      "fgMuted": "#6B6B6B",
+      "accent": "#2E6A86",
+      "accentContrast": "#FFFFFF",
+      "accentSoft": "#EAF2F6",
+      "line": "#D8D8D8",
+      "success": "#468A2E",
+      "warning": "#B26E00",
+      "danger": "#E5121D"
+    },
+    "dark": {
+      "bg": "#0F0F0F",
+      "bgElevated": "#1A1A1A",
+      "fg": "#F4F4F4",
+      "fgMuted": "#B4B4B4",
+      "accent": "#6F9DB6",
+      "accentContrast": "#0F1E28",
+      "accentSoft": "#1A3947",
+      "line": "#2E2E2E",
+      "success": "#8AC759",
+      "warning": "#F0A93A",
+      "danger": "#FF6B72"
+    }
+  },
+  "responsive": {
+    "breakpoints": {
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px"
+    },
+    "touchTargetMin": "44px",
+    "pagePadding": "clamp(16px, 4vw, 32px)",
+    "note": "Fluid layout: paddings clamp, grids use minmax(min(Npx,100%),1fr); display type may use clamp() between the Heading and Display steps."
+  }
+}

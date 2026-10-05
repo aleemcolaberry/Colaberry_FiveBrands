@@ -1,0 +1,81 @@
+{
+  "systemId": "ai-flotation-b",
+  "registry": "registry.json",
+  "brandSlug": "ai-flotation",
+  "themeKey": "ai-flotation",
+  "supportEmail": "support@aiflotation.com",
+  "typography": {
+    "heading": "Manrope",
+    "body": "Manrope",
+    "scale": "16px × 1.3",
+    "radius": "6px",
+    "shadow": "0 1px 3px rgba(10,20,18,0.18)"
+  },
+  "light": {
+    "bg": "#F6F8F7",
+    "bgElevated": "#FFFFFF",
+    "fg": "#14201D",
+    "fgMuted": "#4C5B57",
+    "accent": "#0E6E63",
+    "accentContrast": "#FFFFFF",
+    "accentSoft": "#D8EEE9",
+    "line": "#D6DEDB",
+    "success": "#1F7A3D",
+    "warning": "#8F6400",
+    "danger": "#BB3131"
+  },
+  "dark": {
+    "bg": "#0E1413",
+    "bgElevated": "#17201E",
+    "fg": "#E9EFED",
+    "fgMuted": "#A2B1AC",
+    "accent": "#46C2AF",
+    "accentContrast": "#062B25",
+    "accentSoft": "#123B35",
+    "line": "#2C3936",
+    "success": "#57BE7C",
+    "warning": "#DFA83E",
+    "danger": "#F0736B"
+  },
+  "contrastRatios": {
+    "light": {
+      "fgOnBg": 15.7,
+      "fgOnBgElevated": 16.7,
+      "fgMutedOnBg": 6.7,
+      "accentContrastOnAccent": 6.1,
+      "accentOnBg": 5.7
+    },
+    "dark": {
+      "fgOnBg": 16,
+      "fgOnBgElevated": 14.3,
+      "fgMutedOnBg": 8.4,
+      "accentContrastOnAccent": 7,
+      "accentOnBg": 8.5
+    }
+  },
+  "email": {
+    "headerNotes": "Mark (PNG export of ai-flotation-mark.svg) + wordmark + accent rule on bg — spare, no banner.",
+    "footerNotes": "Legal footer: AI Flotation LLC + mailing address placeholder + unsubscribe line.",
+    "buttonHex": "#0E6E63"
+  },
+  "motion": {
+    "personality": "Decisive — crisp, immediate, no flourish",
+    "duration": {
+      "fast": "80ms",
+      "base": "140ms",
+      "slow": "210ms"
+    },
+    "easing": {
+      "standard": "cubic-bezier(0.3,0,0,1)",
+      "enter": "cubic-bezier(0.16,0,0,1)",
+      "exit": "cubic-bezier(0.4,0,1,1)"
+    },
+    "enterDistance": "5px",
+    "pressScale": 0.99,
+    "rules": "fast → hover, press, toggles · base → menus, toasts, accordions · slow → modals, view changes; exits run at fast with the exit curve; prefers-reduced-motion collapses all motion"
+  },
+  "logoKit": {
+    "mark": "assets/logo/ai-flotation-mark.svg",
+    "guidance": "New mark proposed this round (float over waterline) — no prior logo existed. Color only via tokens."
+  }
+}

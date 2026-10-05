@@ -1,0 +1,361 @@
+{
+  "version": 1,
+  "generated": "2026-09-02",
+  "about": "Master index of the multi-brand system. Look up a systemId to pull every artifact of that design system: tokens, stylesheet, guide, payload, email skeleton, assets and the shared component inventory. The same id is stamped inside each artifact (systemId field in JSON, --system-id CSS variable, header lines in md/html).",
+  "idScheme": "systemId = <brandId>-<variant> for A/B brands; systemId = brandId for single-direction brands. IDs are permanent — new directions add ids, never reuse them.",
+  "brands": {
+    "refactored": {
+      "name": "Refactored.ai",
+      "systemIds": [
+        "refactored-a",
+        "refactored-b"
+      ],
+      "tokens": "tokens/refactored.json",
+      "email": "emails/refactored.html"
+    },
+    "colaberry-enterprise": {
+      "name": "Colaberry Enterprise",
+      "systemIds": [
+        "colaberry-enterprise"
+      ],
+      "tokens": "tokens/colaberry-enterprise.json",
+      "email": "emails/colaberry-enterprise.html"
+    },
+    "colaberry-training": {
+      "name": "Colaberry Training",
+      "systemIds": [
+        "colaberry-training"
+      ],
+      "tokens": "tokens/colaberry-training.json",
+      "email": "emails/colaberry-training.html"
+    },
+    "cpn": {
+      "name": "Career Pathways Network",
+      "systemIds": [
+        "cpn-a",
+        "cpn-b"
+      ],
+      "tokens": "tokens/cpn.json",
+      "email": "emails/cpn.html"
+    },
+    "ai-flotation": {
+      "name": "AI Flotation",
+      "systemIds": [
+        "ai-flotation-a",
+        "ai-flotation-b"
+      ],
+      "tokens": "tokens/ai-flotation.json",
+      "email": "emails/ai-flotation.html"
+    }
+  },
+  "systems": {
+    "refactored-a": {
+      "systemId": "refactored-a",
+      "brandId": "refactored",
+      "variant": "a",
+      "name": "Refactored.ai",
+      "variantLabel": "Option A — Terminal",
+      "fonts": {
+        "heading": "IBM Plex Mono",
+        "body": "IBM Plex Sans",
+        "license": "OFL (Google Fonts)"
+      },
+      "typeScale": {
+        "base": 16,
+        "ratio": 1.2
+      },
+      "radius": 4,
+      "accent": {
+        "light": "#1F76B4",
+        "dark": "#5CA7DA"
+      },
+      "artifacts": {
+        "tokens": "tokens/refactored.json#/variants/a",
+        "tokensModule": "tokens.js → BRANDS entry with id \"refactored-a\"",
+        "stylesheet": "dist/refactored-a.css",
+        "guide": "dist/refactored-a.brand.md",
+        "payload": "exports/refactored.a.payload.json",
+        "email": "emails/refactored.html",
+        "starter": "dist/starter.html?brand=refactored-a",
+        "specimen": "Multi-Brand Tokens.dc.html"
+      },
+      "assets": {
+        "mark": "assets/logo/refactored-mark.svg",
+        "logo": "assets/logo/refactored-logo.svg"
+      }
+    },
+    "refactored-b": {
+      "systemId": "refactored-b",
+      "brandId": "refactored",
+      "variant": "b",
+      "name": "Refactored.ai",
+      "variantLabel": "Option B — Geometric",
+      "fonts": {
+        "heading": "Outfit",
+        "body": "Outfit",
+        "license": "OFL (Google Fonts)"
+      },
+      "typeScale": {
+        "base": 16,
+        "ratio": 1.25
+      },
+      "radius": 8,
+      "accent": {
+        "light": "#256FA6",
+        "dark": "#7CBCE8"
+      },
+      "artifacts": {
+        "tokens": "tokens/refactored.json#/variants/b",
+        "tokensModule": "tokens.js → BRANDS entry with id \"refactored-b\"",
+        "stylesheet": "dist/refactored-b.css",
+        "guide": "dist/refactored-b.brand.md",
+        "payload": "exports/refactored.b.payload.json",
+        "email": "emails/refactored.html",
+        "starter": "dist/starter.html?brand=refactored-b",
+        "specimen": "Multi-Brand Tokens.dc.html"
+      },
+      "assets": {
+        "mark": "assets/logo/refactored-mark.svg",
+        "logo": "assets/logo/refactored-logo.svg"
+      }
+    },
+    "colaberry-enterprise": {
+      "systemId": "colaberry-enterprise",
+      "brandId": "colaberry-enterprise",
+      "variant": null,
+      "name": "Colaberry Enterprise",
+      "variantLabel": null,
+      "fonts": {
+        "heading": "Roboto",
+        "body": "Roboto",
+        "license": "Apache-2.0 (Google Fonts)"
+      },
+      "typeScale": {
+        "base": 16,
+        "ratio": 1.25
+      },
+      "radius": 8,
+      "accent": {
+        "light": "#2E6A86",
+        "dark": "#6F9DB6"
+      },
+      "artifacts": {
+        "tokens": "tokens/colaberry-enterprise.json",
+        "tokensModule": "tokens.js → BRANDS entry with id \"colaberry-enterprise\"",
+        "stylesheet": "dist/colaberry-enterprise.css",
+        "guide": "dist/colaberry-enterprise.brand.md",
+        "payload": "exports/colaberry-enterprise.payload.json",
+        "email": "emails/colaberry-enterprise.html",
+        "starter": "dist/starter.html?brand=colaberry-enterprise",
+        "specimen": "Multi-Brand Tokens.dc.html"
+      },
+      "assets": {
+        "mark": "assets/cb-enterprise-mark.svg",
+        "markDark": "assets/cb-enterprise-mark-dark.svg",
+        "markPng": "assets/cb-enterprise-mark.png",
+        "logo": "assets/logo/colaberry-horizontal.png",
+        "logoDark": "assets/logo/colaberry-horizontal-white.png"
+      }
+    },
+    "colaberry-training": {
+      "systemId": "colaberry-training",
+      "brandId": "colaberry-training",
+      "variant": null,
+      "name": "Colaberry Training",
+      "variantLabel": null,
+      "fonts": {
+        "heading": "Roboto",
+        "body": "Roboto",
+        "license": "Apache-2.0 (Google Fonts)"
+      },
+      "typeScale": {
+        "base": 17,
+        "ratio": 1.28
+      },
+      "radius": 16,
+      "accent": {
+        "light": "#E5121D",
+        "dark": "#FD5760"
+      },
+      "artifacts": {
+        "tokens": "tokens/colaberry-training.json",
+        "tokensModule": "tokens.js → BRANDS entry with id \"colaberry-training\"",
+        "stylesheet": "dist/colaberry-training.css",
+        "guide": "dist/colaberry-training.brand.md",
+        "payload": "exports/colaberry-training.payload.json",
+        "email": "emails/colaberry-training.html",
+        "starter": "dist/starter.html?brand=colaberry-training",
+        "specimen": "Multi-Brand Tokens.dc.html"
+      },
+      "assets": {
+        "mark": "assets/logo/cb-training-mark.png",
+        "logo": "assets/logo/colaberry-horizontal.png",
+        "logoDark": "assets/logo/colaberry-horizontal-white.png"
+      }
+    },
+    "cpn-a": {
+      "systemId": "cpn-a",
+      "brandId": "cpn",
+      "variant": "a",
+      "name": "Career Pathways Network",
+      "variantLabel": "Option A — Grove",
+      "fonts": {
+        "heading": "Bitter",
+        "body": "Atkinson Hyperlegible",
+        "license": "OFL (Google Fonts)"
+      },
+      "typeScale": {
+        "base": 17,
+        "ratio": 1.333
+      },
+      "radius": 12,
+      "accent": {
+        "light": "#1D6A4C",
+        "dark": "#5CC08E"
+      },
+      "artifacts": {
+        "tokens": "tokens/cpn.json#/variants/a",
+        "tokensModule": "tokens.js → BRANDS entry with id \"cpn-a\"",
+        "stylesheet": "dist/cpn-a.css",
+        "guide": "dist/cpn-a.brand.md",
+        "payload": "exports/cpn.a.payload.json",
+        "email": "emails/cpn.html",
+        "starter": "dist/starter.html?brand=cpn-a",
+        "specimen": "Multi-Brand Tokens.dc.html"
+      },
+      "assets": {
+        "mark": "assets/logo/cpn-mark.svg"
+      }
+    },
+    "cpn-b": {
+      "systemId": "cpn-b",
+      "brandId": "cpn",
+      "variant": "b",
+      "name": "Career Pathways Network",
+      "variantLabel": "Option B — Vestry",
+      "fonts": {
+        "heading": "Source Serif 4",
+        "body": "Public Sans",
+        "license": "OFL (Google Fonts)"
+      },
+      "typeScale": {
+        "base": 17,
+        "ratio": 1.3
+      },
+      "radius": 12,
+      "accent": {
+        "light": "#6D4CA3",
+        "dark": "#B197E0"
+      },
+      "artifacts": {
+        "tokens": "tokens/cpn.json#/variants/b",
+        "tokensModule": "tokens.js → BRANDS entry with id \"cpn-b\"",
+        "stylesheet": "dist/cpn-b.css",
+        "guide": "dist/cpn-b.brand.md",
+        "payload": "exports/cpn.b.payload.json",
+        "email": "emails/cpn.html",
+        "starter": "dist/starter.html?brand=cpn-b",
+        "specimen": "Multi-Brand Tokens.dc.html"
+      },
+      "assets": {
+        "mark": "assets/logo/cpn-mark.svg"
+      }
+    },
+    "ai-flotation-a": {
+      "systemId": "ai-flotation-a",
+      "brandId": "ai-flotation",
+      "variant": "a",
+      "name": "AI Flotation",
+      "variantLabel": "Option A — Forge",
+      "fonts": {
+        "heading": "Space Grotesk",
+        "body": "Archivo",
+        "license": "OFL (Google Fonts)"
+      },
+      "typeScale": {
+        "base": 16,
+        "ratio": 1.3
+      },
+      "radius": 2,
+      "accent": {
+        "light": "#BA430E",
+        "dark": "#F0813C"
+      },
+      "artifacts": {
+        "tokens": "tokens/ai-flotation.json#/variants/a",
+        "tokensModule": "tokens.js → BRANDS entry with id \"ai-flotation-a\"",
+        "stylesheet": "dist/ai-flotation-a.css",
+        "guide": "dist/ai-flotation-a.brand.md",
+        "payload": "exports/ai-flotation.a.payload.json",
+        "email": "emails/ai-flotation.html",
+        "starter": "dist/starter.html?brand=ai-flotation-a",
+        "specimen": "Multi-Brand Tokens.dc.html"
+      },
+      "assets": {
+        "mark": "assets/logo/ai-flotation-mark.svg"
+      }
+    },
+    "ai-flotation-b": {
+      "systemId": "ai-flotation-b",
+      "brandId": "ai-flotation",
+      "variant": "b",
+      "name": "AI Flotation",
+      "variantLabel": "Option B — Harbor",
+      "fonts": {
+        "heading": "Manrope",
+        "body": "Manrope",
+        "license": "OFL (Google Fonts)"
+      },
+      "typeScale": {
+        "base": 16,
+        "ratio": 1.3
+      },
+      "radius": 6,
+      "accent": {
+        "light": "#0E6E63",
+        "dark": "#46C2AF"
+      },
+      "artifacts": {
+        "tokens": "tokens/ai-flotation.json#/variants/b",
+        "tokensModule": "tokens.js → BRANDS entry with id \"ai-flotation-b\"",
+        "stylesheet": "dist/ai-flotation-b.css",
+        "guide": "dist/ai-flotation-b.brand.md",
+        "payload": "exports/ai-flotation.b.payload.json",
+        "email": "emails/ai-flotation.html",
+        "starter": "dist/starter.html?brand=ai-flotation-b",
+        "specimen": "Multi-Brand Tokens.dc.html"
+      },
+      "assets": {
+        "mark": "assets/logo/ai-flotation-mark.svg"
+      }
+    }
+  },
+  "components": {
+    "definedIn": "dist/<systemId>.css",
+    "demoedIn": "Multi-Brand Tokens.dc.html (Specimen view)",
+    "classes": {
+      "b-btn": "Primary button · modifiers: b-btn--secondary, b-btn--ghost, b-btn--danger",
+      "b-field": "Label + input + help stack",
+      "b-input": "Text input · modifier: b-input--error",
+      "b-help": "Field helper text",
+      "b-error-text": "Field error text",
+      "b-card": "Elevated card",
+      "b-badge": "Accent-soft pill badge",
+      "b-alert": "Inline alert · modifiers: b-alert--success, b-alert--warning, b-alert--danger",
+      "b-enter": "Enter animation utility",
+      "b-pop": "Pop-in animation utility",
+      "b-skeleton": "Loading shimmer"
+    },
+    "tokenGroups": [
+      "color (11 roles × light + dark)",
+      "derived accent states (--accent-hover/press, --focus-ring)",
+      "type (--font-*, --fw-heading, --fs-*)",
+      "radius",
+      "shadow",
+      "spacing (--space-1…16)",
+      "touch target (--touch-target)",
+      "motion (--motion-fast/base/slow, --ease-*, --enter-distance, --press-scale)",
+      "breakpoints (tokens json → responsive)"
+    ]
+  }
+}

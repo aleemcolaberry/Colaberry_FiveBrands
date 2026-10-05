@@ -1,0 +1,162 @@
+{
+  "brandId": "cpn",
+  "name": "Career Pathways Network",
+  "systemIds": [
+    "cpn-a",
+    "cpn-b"
+  ],
+  "variants": {
+    "a": {
+      "systemId": "cpn-a",
+      "id": "cpn-a",
+      "brandId": "cpn",
+      "variant": "a",
+      "variantLabel": "Option A — Grove",
+      "name": "Career Pathways Network",
+      "blurb": "Scholarships and career pathways, built on dignity and access.",
+      "mark": "assets/logo/cpn-mark.svg",
+      "fonts": {
+        "heading": "Bitter",
+        "body": "Atkinson Hyperlegible",
+        "license": "OFL (Google Fonts)"
+      },
+      "typeScale": {
+        "base": 17,
+        "ratio": 1.333
+      },
+      "radius": 12,
+      "shadow": "0 1px 4px rgba(28,27,24,0.14)",
+      "motion": {
+        "personality": "Steady — calm and unhurried; nothing startles",
+        "duration": {
+          "fast": "170ms",
+          "base": "280ms",
+          "slow": "420ms"
+        },
+        "easing": {
+          "standard": "cubic-bezier(0.45,0.05,0.25,1)",
+          "enter": "cubic-bezier(0.25,0,0.2,1)",
+          "exit": "cubic-bezier(0.5,0,0.8,1)"
+        },
+        "enterDistance": "10px",
+        "pressScale": 0.985,
+        "rules": "fast → hover, press, toggles · base → menus, toasts, accordions · slow → modals, view changes; exits run at fast with the exit curve; prefers-reduced-motion collapses all motion"
+      },
+      "modes": {
+        "light": {
+          "bg": "#FFFDF8",
+          "bgElevated": "#FFFFFF",
+          "fg": "#1C1B18",
+          "fgMuted": "#4E4B42",
+          "accent": "#1D6A4C",
+          "accentContrast": "#FFFFFF",
+          "accentSoft": "#DFF0E6",
+          "line": "#DDD8CB",
+          "success": "#256C3A",
+          "warning": "#8A5A00",
+          "danger": "#B3261E"
+        },
+        "dark": {
+          "bg": "#101311",
+          "bgElevated": "#1A1E1A",
+          "fg": "#F3F1E9",
+          "fgMuted": "#B9B5A6",
+          "accent": "#5CC08E",
+          "accentContrast": "#0B2417",
+          "accentSoft": "#17352A",
+          "line": "#33382F",
+          "success": "#6BCB93",
+          "warning": "#E3B341",
+          "danger": "#F0736B"
+        }
+      },
+      "responsive": {
+        "breakpoints": {
+          "sm": "640px",
+          "md": "768px",
+          "lg": "1024px",
+          "xl": "1280px"
+        },
+        "touchTargetMin": "44px",
+        "pagePadding": "clamp(16px, 4vw, 32px)",
+        "note": "Fluid layout: paddings clamp, grids use minmax(min(Npx,100%),1fr); display type may use clamp() between the Heading and Display steps."
+      }
+    },
+    "b": {
+      "systemId": "cpn-b",
+      "id": "cpn-b",
+      "brandId": "cpn",
+      "variant": "b",
+      "variantLabel": "Option B — Vestry",
+      "name": "Career Pathways Network",
+      "blurb": "Scholarships and career pathways, built on dignity and access.",
+      "mark": "assets/logo/cpn-mark.svg",
+      "fonts": {
+        "heading": "Source Serif 4",
+        "body": "Public Sans",
+        "license": "OFL (Google Fonts)"
+      },
+      "typeScale": {
+        "base": 17,
+        "ratio": 1.3
+      },
+      "radius": 12,
+      "shadow": "0 1px 4px rgba(30,24,38,0.14)",
+      "motion": {
+        "personality": "Steady — calm and unhurried; nothing startles",
+        "duration": {
+          "fast": "170ms",
+          "base": "280ms",
+          "slow": "420ms"
+        },
+        "easing": {
+          "standard": "cubic-bezier(0.45,0.05,0.25,1)",
+          "enter": "cubic-bezier(0.25,0,0.2,1)",
+          "exit": "cubic-bezier(0.5,0,0.8,1)"
+        },
+        "enterDistance": "10px",
+        "pressScale": 0.985,
+        "rules": "fast → hover, press, toggles · base → menus, toasts, accordions · slow → modals, view changes; exits run at fast with the exit curve; prefers-reduced-motion collapses all motion"
+      },
+      "modes": {
+        "light": {
+          "bg": "#FCFAF7",
+          "bgElevated": "#FFFFFF",
+          "fg": "#221D28",
+          "fgMuted": "#57505F",
+          "accent": "#6D4CA3",
+          "accentContrast": "#FFFFFF",
+          "accentSoft": "#EDE6F7",
+          "line": "#DFD9D2",
+          "success": "#256C3A",
+          "warning": "#8A5A00",
+          "danger": "#B3261E"
+        },
+        "dark": {
+          "bg": "#14111A",
+          "bgElevated": "#1E1927",
+          "fg": "#F1EDF6",
+          "fgMuted": "#B3ABC0",
+          "accent": "#B197E0",
+          "accentContrast": "#1D1030",
+          "accentSoft": "#2C2140",
+          "line": "#362E44",
+          "success": "#6BCB93",
+          "warning": "#E3B341",
+          "danger": "#F0736B"
+        }
+      },
+      "responsive": {
+        "breakpoints": {
+          "sm": "640px",
+          "md": "768px",
+          "lg": "1024px",
+          "xl": "1280px"
+        },
+        "touchTargetMin": "44px",
+        "pagePadding": "clamp(16px, 4vw, 32px)",
+        "note": "Fluid layout: paddings clamp, grids use minmax(min(Npx,100%),1fr); display type may use clamp() between the Heading and Display steps."
+      }
+    }
+  }
+}

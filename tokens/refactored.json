@@ -1,0 +1,164 @@
+{
+  "brandId": "refactored",
+  "name": "Refactored.ai",
+  "systemIds": [
+    "refactored-a",
+    "refactored-b"
+  ],
+  "variants": {
+    "a": {
+      "systemId": "refactored-a",
+      "id": "refactored-a",
+      "brandId": "refactored",
+      "variant": "a",
+      "variantLabel": "Option A — Terminal",
+      "name": "Refactored.ai",
+      "blurb": "Platform infrastructure for AI-driven learning products.",
+      "logo": "assets/logo/refactored-logo.svg",
+      "mark": "assets/logo/refactored-mark.svg",
+      "fonts": {
+        "heading": "IBM Plex Mono",
+        "body": "IBM Plex Sans",
+        "license": "OFL (Google Fonts)"
+      },
+      "typeScale": {
+        "base": 16,
+        "ratio": 1.2
+      },
+      "radius": 4,
+      "shadow": "0 1px 2px rgba(8,12,16,0.24)",
+      "motion": {
+        "personality": "Instrumental — fast and exact; nothing decorative",
+        "duration": {
+          "fast": "90ms",
+          "base": "160ms",
+          "slow": "240ms"
+        },
+        "easing": {
+          "standard": "cubic-bezier(0.2,0,0,1)",
+          "enter": "cubic-bezier(0,0,0.2,1)",
+          "exit": "cubic-bezier(0.3,0,1,1)"
+        },
+        "enterDistance": "6px",
+        "pressScale": 0.99,
+        "rules": "fast → hover, press, toggles · base → menus, toasts, accordions · slow → modals, view changes; exits run at fast with the exit curve; prefers-reduced-motion collapses all motion"
+      },
+      "modes": {
+        "light": {
+          "bg": "#F7FAFC",
+          "bgElevated": "#FFFFFF",
+          "fg": "#16222C",
+          "fgMuted": "#4E6172",
+          "accent": "#1F76B4",
+          "accentContrast": "#FFFFFF",
+          "accentSoft": "#DDEEF9",
+          "line": "#D5E0E8",
+          "success": "#1A7F37",
+          "warning": "#9A6700",
+          "danger": "#C93C37"
+        },
+        "dark": {
+          "bg": "#0C141B",
+          "bgElevated": "#14202A",
+          "fg": "#E8F0F6",
+          "fgMuted": "#9FB3C2",
+          "accent": "#5CA7DA",
+          "accentContrast": "#06202F",
+          "accentSoft": "#123246",
+          "line": "#263743",
+          "success": "#4AC26B",
+          "warning": "#D4A72C",
+          "danger": "#F2655F"
+        }
+      },
+      "responsive": {
+        "breakpoints": {
+          "sm": "640px",
+          "md": "768px",
+          "lg": "1024px",
+          "xl": "1280px"
+        },
+        "touchTargetMin": "44px",
+        "pagePadding": "clamp(16px, 4vw, 32px)",
+        "note": "Fluid layout: paddings clamp, grids use minmax(min(Npx,100%),1fr); display type may use clamp() between the Heading and Display steps."
+      }
+    },
+    "b": {
+      "systemId": "refactored-b",
+      "id": "refactored-b",
+      "brandId": "refactored",
+      "variant": "b",
+      "variantLabel": "Option B — Geometric",
+      "name": "Refactored.ai",
+      "blurb": "Platform infrastructure for AI-driven learning products.",
+      "logo": "assets/logo/refactored-logo.svg",
+      "mark": "assets/logo/refactored-mark.svg",
+      "fonts": {
+        "heading": "Outfit",
+        "body": "Outfit",
+        "license": "OFL (Google Fonts)"
+      },
+      "typeScale": {
+        "base": 16,
+        "ratio": 1.25
+      },
+      "radius": 8,
+      "shadow": "0 2px 6px rgba(12,16,20,0.10)",
+      "motion": {
+        "personality": "Instrumental — fast and exact; nothing decorative",
+        "duration": {
+          "fast": "90ms",
+          "base": "160ms",
+          "slow": "240ms"
+        },
+        "easing": {
+          "standard": "cubic-bezier(0.2,0,0,1)",
+          "enter": "cubic-bezier(0,0,0.2,1)",
+          "exit": "cubic-bezier(0.3,0,1,1)"
+        },
+        "enterDistance": "6px",
+        "pressScale": 0.99,
+        "rules": "fast → hover, press, toggles · base → menus, toasts, accordions · slow → modals, view changes; exits run at fast with the exit curve; prefers-reduced-motion collapses all motion"
+      },
+      "modes": {
+        "light": {
+          "bg": "#FAFAFA",
+          "bgElevated": "#FFFFFF",
+          "fg": "#191C1F",
+          "fgMuted": "#535A61",
+          "accent": "#256FA6",
+          "accentContrast": "#FFFFFF",
+          "accentSoft": "#E1EFF8",
+          "line": "#DDDFE2",
+          "success": "#1A7F37",
+          "warning": "#9A6700",
+          "danger": "#C93C37"
+        },
+        "dark": {
+          "bg": "#101214",
+          "bgElevated": "#191C1F",
+          "fg": "#EAEDEF",
+          "fgMuted": "#A3AAB1",
+          "accent": "#7CBCE8",
+          "accentContrast": "#0A2434",
+          "accentSoft": "#173248",
+          "line": "#2C3136",
+          "success": "#4AC26B",
+          "warning": "#D4A72C",
+          "danger": "#F2655F"
+        }
+      },
+      "responsive": {
+        "breakpoints": {
+          "sm": "640px",
+          "md": "768px",
+          "lg": "1024px",
+          "xl": "1280px"
+        },
+        "touchTargetMin": "44px",
+        "pagePadding": "clamp(16px, 4vw, 32px)",
+        "note": "Fluid layout: paddings clamp, grids use minmax(min(Npx,100%),1fr); display type may use clamp() between the Heading and Display steps."
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Starter</title>
+<script>
+const REG={"refactored-a":{"logo":"../assets/logo/refactored-logo.svg","name":"Refactored.ai — Option A — Terminal","fonts":"https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"},"refactored-b":{"logo":"../assets/logo/refactored-logo.svg","name":"Refactored.ai — Option B — Geometric","fonts":"https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"},"colaberry-enterprise":{"logo":"../assets/cb-enterprise-mark.svg","logoDark":"../assets/cb-enterprise-mark-dark.svg","name":"Colaberry Enterprise","fonts":"https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"},"colaberry-training":{"logo":"../assets/logo/colaberry-horizontal.png","logoDark":"../assets/logo/colaberry-horizontal-white.png","name":"Colaberry Training","fonts":"https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"},"cpn-a":{"logo":"../assets/logo/cpn-mark.svg","name":"Career Pathways Network — Option A — Grove","fonts":"https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap"},"cpn-b":{"logo":"../assets/logo/cpn-mark.svg","name":"Career Pathways Network — Option B — Vestry","fonts":"https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,700&family=Public+Sans:wght@400;600&display=swap"},"ai-flotation-a":{"logo":"../assets/logo/ai-flotation-mark.svg","name":"AI Flotation — Option A — Forge","fonts":"https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Archivo:wght@400;500;600&display=swap"},"ai-flotation-b":{"logo":"../assets/logo/ai-flotation-mark.svg","name":"AI Flotation — Option B — Harbor","fonts":"https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"}};
+const q=new URLSearchParams(location.search);const brand=REG[q.get('brand')]?q.get('brand'):'colaberry-enterprise';
+if(q.get('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');
+document.write('<link rel="stylesheet" href="'+REG[brand].fonts+'">');
+document.write('<link rel="stylesheet" href="./'+brand+'.css">');
+const setLogo=()=>{const dk=document.documentElement.getAttribute('data-theme')==='dark';const r=REG[brand];document.getElementById('blogo').src=(dk&&r.logoDark)||r.logo;};
+addEventListener('DOMContentLoaded',()=>{document.getElementById('bname').textContent=REG[brand].name;document.title=REG[brand].name+' — starter';setLogo();
+document.getElementById('toggle').onclick=()=>{const h=document.documentElement;h.getAttribute('data-theme')==='dark'?h.removeAttribute('data-theme'):h.setAttribute('data-theme','dark');setLogo();};
+document.getElementById('picker').innerHTML=Object.entries(REG).map(([id,r])=>'<a href="?brand='+id+'" style="margin-right:12px">'+r.name+'</a>').join('');});
+</script></head>
+<body>
+<main style="max-width:760px;margin:0 auto;padding:var(--space-8) var(--space-4);display:grid;gap:var(--space-6)">
+<nav id="picker" style="font-size:var(--fs-caption)"></nav>
+<header style="display:flex;justify-content:space-between;align-items:center;gap:var(--space-4);flex-wrap:wrap">
+<span style="display:flex;align-items:center;gap:14px;min-width:0"><img id="blogo" alt="" style="height:32px;display:block"><h1 id="bname" style="margin:0"></h1></span>
+<button class="b-btn b-btn--secondary" id="toggle">Toggle dark</button>
+</header>
+<p style="color:var(--fg-muted);margin:0">Every element on this page is plain HTML styled only by the generated stylesheet — no custom CSS. <a href="#">An inline link.</a></p>
+<div style="display:flex;gap:var(--space-3);flex-wrap:wrap">
+<button class="b-btn">Primary action</button>
+<button class="b-btn b-btn--secondary">Secondary</button>
+<button class="b-btn b-btn--ghost">Ghost</button>
+<button class="b-btn b-btn--danger">Delete</button>
+</div>
+<div class="b-field"><label>Work email</label><input class="b-input" value="you@company.com"><div class="b-help">Helper text sits in fg-muted.</div></div>
+<div class="b-field"><label>Team size</label><input class="b-input b-input--error" value="0"><div class="b-error-text">Enter a team of at least 5.</div></div>
+<div class="b-card" style="max-width:420px"><span class="b-badge">Badge</span><h3 style="margin:12px 0 6px">Card title</h3><p style="color:var(--fg-muted);margin:0 0 16px">Card body copy on the elevated surface, with the brand's one shadow.</p><button class="b-btn">Card action</button></div>
+<div style="display:grid;gap:var(--space-2);max-width:460px">
+<div class="b-alert b-alert--success"><div><strong>Saved.</strong> Everything is up to date.</div></div>
+<div class="b-alert b-alert--warning"><div><strong>Heads up.</strong> This expires in 3 days.</div></div>
+<div class="b-alert b-alert--danger"><div><strong>Failed.</strong> The last submission did not go through.</div></div>
+</div>
+</main>
+</body></html>

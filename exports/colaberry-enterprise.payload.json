@@ -1,0 +1,84 @@
+{
+  "systemId": "colaberry-enterprise",
+  "registry": "registry.json",
+  "brandSlug": "colaberry-enterprise",
+  "themeKey": "colaberry-enterprise",
+  "supportEmail": "TBD — confirm sending domain",
+  "typography": {
+    "heading": "Roboto",
+    "body": "Roboto",
+    "scale": "16px × 1.25",
+    "radius": "8px",
+    "shadow": "0 3px 8px rgba(26,26,26,0.06), 0 1px 3px rgba(26,26,26,0.04)"
+  },
+  "light": {
+    "bg": "#F8F8F7",
+    "bgElevated": "#FFFFFF",
+    "fg": "#1A1A1A",
+    "fgMuted": "#6B6B6B",
+    "accent": "#2E6A86",
+    "accentContrast": "#FFFFFF",
+    "accentSoft": "#EAF2F6",
+    "line": "#D8D8D8",
+    "success": "#468A2E",
+    "warning": "#B26E00",
+    "danger": "#E5121D"
+  },
+  "dark": {
+    "bg": "#0F0F0F",
+    "bgElevated": "#1A1A1A",
+    "fg": "#F4F4F4",
+    "fgMuted": "#B4B4B4",
+    "accent": "#6F9DB6",
+    "accentContrast": "#0F1E28",
+    "accentSoft": "#1A3947",
+    "line": "#2E2E2E",
+    "success": "#8AC759",
+    "warning": "#F0A93A",
+    "danger": "#FF6B72"
+  },
+  "contrastRatios": {
+    "light": {
+      "fgOnBg": 16.4,
+      "fgOnBgElevated": 17.4,
+      "fgMutedOnBg": 5,
+      "accentContrastOnAccent": 6,
+      "accentOnBg": 5.6
+    },
+    "dark": {
+      "fgOnBg": 17.4,
+      "fgOnBgElevated": 15.8,
+      "fgMutedOnBg": 9.2,
+      "accentContrastOnAccent": 5.8,
+      "accentOnBg": 6.5
+    }
+  },
+  "email": {
+    "headerNotes": "New flat lockup — berry-blue cherry-pair mark (PNG <=48px) + Roboto wordmark on bg; calm, document-like.",
+    "footerNotes": "Legal footer: Colaberry, Inc., 200 Chisholm Place placeholder + unsubscribe line.",
+    "buttonHex": "#2E6A86"
+  },
+  "motion": {
+    "personality": "Composed — measured, quiet fades; nothing bounces",
+    "duration": {
+      "fast": "120ms",
+      "base": "200ms",
+      "slow": "300ms"
+    },
+    "easing": {
+      "standard": "cubic-bezier(0.4,0,0.2,1)",
+      "enter": "cubic-bezier(0,0,0.2,1)",
+      "exit": "cubic-bezier(0.4,0,1,1)"
+    },
+    "enterDistance": "8px",
+    "pressScale": 0.985,
+    "rules": "fast → hover, press, toggles · base → menus, toasts, accordions · slow → modals, view changes; exits run at fast with the exit curve; prefers-reduced-motion collapses all motion"
+  },
+  "logoKit": {
+    "mark": "assets/cb-enterprise-mark.svg",
+    "markDark": "assets/cb-enterprise-mark-dark.svg",
+    "horizontal": "assets/logo/colaberry-horizontal.png",
+    "horizontalDark": "assets/logo/colaberry-horizontal-white.png",
+    "guidance": "Cherry-pair mark in berry blue + Roboto wordmark + ENTERPRISE tag. Color only via tokens."
+  }
+}

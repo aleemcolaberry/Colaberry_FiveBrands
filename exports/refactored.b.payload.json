@@ -1,0 +1,83 @@
+{
+  "systemId": "refactored-b",
+  "registry": "registry.json",
+  "brandSlug": "refactored",
+  "themeKey": "refactored",
+  "supportEmail": "TBD — confirm sending domain",
+  "typography": {
+    "heading": "Outfit",
+    "body": "Outfit",
+    "scale": "16px × 1.25",
+    "radius": "8px",
+    "shadow": "0 2px 6px rgba(12,16,20,0.10)"
+  },
+  "light": {
+    "bg": "#FAFAFA",
+    "bgElevated": "#FFFFFF",
+    "fg": "#191C1F",
+    "fgMuted": "#535A61",
+    "accent": "#256FA6",
+    "accentContrast": "#FFFFFF",
+    "accentSoft": "#E1EFF8",
+    "line": "#DDDFE2",
+    "success": "#1A7F37",
+    "warning": "#9A6700",
+    "danger": "#C93C37"
+  },
+  "dark": {
+    "bg": "#101214",
+    "bgElevated": "#191C1F",
+    "fg": "#EAEDEF",
+    "fgMuted": "#A3AAB1",
+    "accent": "#7CBCE8",
+    "accentContrast": "#0A2434",
+    "accentSoft": "#173248",
+    "line": "#2C3136",
+    "success": "#4AC26B",
+    "warning": "#D4A72C",
+    "danger": "#F2655F"
+  },
+  "contrastRatios": {
+    "light": {
+      "fgOnBg": 16.4,
+      "fgOnBgElevated": 17.1,
+      "fgMutedOnBg": 6.7,
+      "accentContrastOnAccent": 5.4,
+      "accentOnBg": 5.2
+    },
+    "dark": {
+      "fgOnBg": 16,
+      "fgOnBgElevated": 14.6,
+      "fgMutedOnBg": 8,
+      "accentContrastOnAccent": 7.8,
+      "accentOnBg": 9.1
+    }
+  },
+  "email": {
+    "headerNotes": "Logo on bg, 3px accent rule under header — infrastructure tone, no banner color. PNG logo ≤48px.",
+    "footerNotes": "Legal footer: Refactored.ai, Inc. + mailing address placeholder + unsubscribe line.",
+    "buttonHex": "#256FA6"
+  },
+  "motion": {
+    "personality": "Instrumental — fast and exact; nothing decorative",
+    "duration": {
+      "fast": "90ms",
+      "base": "160ms",
+      "slow": "240ms"
+    },
+    "easing": {
+      "standard": "cubic-bezier(0.2,0,0,1)",
+      "enter": "cubic-bezier(0,0,0.2,1)",
+      "exit": "cubic-bezier(0.3,0,1,1)"
+    },
+    "enterDistance": "6px",
+    "pressScale": 0.99,
+    "rules": "fast → hover, press, toggles · base → menus, toasts, accordions · slow → modals, view changes; exits run at fast with the exit curve; prefers-reduced-motion collapses all motion"
+  },
+  "logoKit": {
+    "wordmark": "assets/logo/refactored-logo.svg",
+    "symbol": "assets/logo/refactored-mark.svg",
+    "emailPng": "assets/refactored-logo.png",
+    "note": "Single-alpha SVGs (ed box and r-tile knockouts) — master color #5CA8DD; recolor via CSS mask for dark/mono. Email keeps the PNG."
+  }
+}
